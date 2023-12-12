@@ -1,4 +1,5 @@
 numpy<=1.26
+numba
 scipy
 obspy
 sigpropy>=1.0.0
