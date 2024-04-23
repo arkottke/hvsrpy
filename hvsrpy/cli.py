@@ -113,7 +113,7 @@ def _process_hvsr(fname, kwargs):  # pragma: no cover
     fname_short_no_ext_out = ".".join(fname_short_no_ext)
 
     if not kwargs["no_figure"]:
-        if kwargs["method"] in ["squared-average", "geometric-mean"]:
+        if kwargs["method"] in ["squared-average", "geometric-mean", "single-azimuth"]:
             fig, _ = simple_plot(sensor, hv, kwargs["windowlength"], kwargs["distribution_f0"],
                                  kwargs["distribution_mc"], kwargs["rejection_bool"], kwargs["n"], kwargs["max_iterations"],
                                  kwargs["ymin"], kwargs["ymax"])
